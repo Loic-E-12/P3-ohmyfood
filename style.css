@@ -1,0 +1,294 @@
+header
+{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	width: 100%;
+	height: 60px;
+	margin: auto;
+	padding-top: 15px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #389c75;
+	color: #ffd633;
+	align-self: center;
+}
+body
+{
+	margin: 0;
+	
+}
+
+
+.fa-music
+{
+	background: linear-gradient( #ff3333,#ffcc80);
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	font-size: 25px;
+	
+}
+#container
+{
+	display: flex;
+	margin: auto;
+	margin-top: 30px;
+	flex-direction: row;
+	width: 	100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.menu_a, .menu_b, .menu_c, .menu_d
+{
+	font-size: 15px;
+	border: 3px ridge transparent;
+	box-shadow: 6px 6px 9px grey;
+
+	width: 25%;
+	height: 200px;
+	text-align: center ;
+	padding: 1em;
+	margin-top: 30px;
+	padding-top: 50px;
+
+
+}
+.chic
+{
+	font-family: 'Croissant One', cursive;
+	padding-top: 60px;
+	background: linear-gradient( #ff0000,#ff9900,#8080ff);
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	font-size: 20px;
+
+
+}
+
+.delices
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	padding-top: 40px;
+	background: linear-gradient(#0000b3,#0000ff,#80dfff );
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+}
+.goût
+{
+	font-family: 'Kaushan Script', cursive;
+	padding-top: 40px;
+	font-size: 20px;
+	background: linear-gradient( #003311,#bbff33,#66ff99);
+  	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	
+}
+.note
+{
+	font-family:'Devonshire', cursive; 
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.sub_a
+{
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+
+}
+.sub_b
+{	color: #e67300;
+	font-size: 25px;
+
+}
+.sub_c
+{
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+	color:  #4da6ff;
+}
+.sub_d
+{
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+	color: #00cc44;
+}
+.prochainement .dot {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #ffd633;
+	animation: type 1.3s linear infinite;
+	margin-right : 3px;
+}
+
+.prochainement .dot:nth-child(2) {
+	animation-delay: -1.1s;
+  }
+.prochainement .dot:nth-child(3) {
+	animation-delay: -0.9s;
+  }
+
+
+@keyframes type{
+	0%, 60%, 100% {
+	transform: initial;
+	}
+	30% {
+	transform: translateY(-15px);
+	}
+}
+
+p:hover
+{
+	
+	transform: scale(1.1);
+	transition: .6s;
+	animation: ease-in-out;
+	opacity: 0.5;
+
+}
+p, 
+{
+	text-align: center;
+}
+.center
+{
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+.menu_a
+{
+	background-color: #ffcccc;
+}
+
+	
+.prochainement
+{
+	width: 15%;
+	padding: 10px;
+	margin:auto;
+	margin-top: 40px;
+	text-align: center;
+	background-color: #389c75;
+	color: #ffd633;
+	font-family: 'Roboto', sans-serif;
+		
+}
+
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1em;
+	width: 100%;
+	height: 35px;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #389c75;
+	color: #ffd633;
+	font-family: 'Roboto', sans-serif;
+}
+
+.center
+{
+	text-align: center;
+	padding-top: 15px;
+}
+.btn_contact,.btn_mentions
+{
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.btn_mentions:hover, .btn_contact:hover
+{
+	
+	animation-name:wiggle;
+	animation-duration:1000ms;
+	animation-iteration-count:1;
+	animation-timing-function:1;
+
+}
+
+	@keyframes wiggle {
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+
+
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+@media screen and (max-width: 425px)/*responsive design mobile*/
+{
+	#container
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+		
+		margin: auto;
+	}
+	.menu_a, .menu_b, .menu_c, .menu_d
+	{
+		
+		margin: 80px;
+		width: 50%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.prochainement
+	{
+		
+		width: 50%;
+		height: 30px;
+
+	}
+}
+
+@media screen and (max-width: 768px)/*responsive design tablet*/
+{
+	#container
+	{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		
+	}
+	.menu_a, .menu_b, .menu_c, .menu_d
+	{
+		width: 35%;
+	}
+
+	body
+	{
+		margin: 0;
+		width: auto;
+	}
+}
+

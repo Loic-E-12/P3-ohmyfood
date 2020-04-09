@@ -1,0 +1,147 @@
+header
+{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	width: 100%;
+	padding:  15px;
+	margin: auto;
+	background-color: #389c75;
+	color: #ffd633;
+	align-self: center;
+  font-family: 'Roboto', sans-serif;
+ }
+
+footer
+{
+	display: flex;
+  justify-content: space-between;
+	
+	font-size: 1em;
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+	margin-top: 25px;
+	background-color: #389c75;
+	color: #ffd633;
+  font-family: 'Roboto', sans-serif;
+  }
+
+  a
+  {
+  	text-decoration: none;
+  	color: inherit;
+  }
+
+  h1
+  {
+  	text-align: center;
+  	margin: auto;
+  	padding-top: 50px;
+   font-family: 'Devonshire', cursive;
+  }
+
+  body
+  {
+  	margin: 0;
+  	height: auto;
+  }
+  
+  h3, h4
+{
+  	text-align: center;
+  	margin-top: 35px;
+   
+}
+.foot
+{
+  font-family: 'Devonshire', cursive;
+}
+.title
+{
+  font-family: 'Sriracha', cursive;
+    }
+
+.title
+ {
+    text-decoration:none;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1em;
+    color: #444444;
+    text-transform: uppercase;
+}
+.title:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.title:hover:after {
+    width: 20%;
+    background: #444;
+}
+
+h2
+{
+	text-align: center;
+	margin-top: 100px;
+  font-family: 'Devonshire', cursive;
+}
+p
+{
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+
+ }
+ .price
+ {
+  font-style: bold;
+ }
+  .prelude, .orgue, .final
+  {
+  	display: flex;
+  	justify-content: space-around;
+
+}
+
+
+
+  #container
+  {
+  	
+  	width: 60%;
+  	height:1000px;
+  	margin: auto;
+  	margin-top: 30px;
+  	border:2px solid transparent;
+  	background-color: #ffcccc;
+  }
+  .btn_mentions:hover, .btn_contact:hover
+{
+  
+  animation-name:wiggle;
+  animation-duration:1000ms;
+  animation-iteration-count:1;
+  animation-timing-function:1;
+
+  }
+
+  @keyframes wiggle {
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}

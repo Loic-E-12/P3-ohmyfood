@@ -1,0 +1,148 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header /*ohmyfood logo*/
+{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	width: 100%;
+	height: 60px;
+	margin: auto;
+	background-color: #389c75;
+	color: #ffd633;
+	align-self: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1
+{
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  font-family: 'Devonshire', cursive;
+}
+
+h2
+{
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Devonshire', cursive;
+ background-color: linear-gradient( #1858ed,#18ed38);
+}
+h3
+{
+  text-align: center;
+}
+#container
+{
+    
+  width: 60%;
+  height:1000px;
+  margin: auto;
+  margin-top: 30px;
+  border:2px solid transparent;
+  background-color: #ffcccc;
+}
+.fa-music
+{
+  background: linear-gradient( #ff3333,#ffcc80);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 35px;
+  
+}
+
+p
+{
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+}
+
+.entree, .plat, .dessert
+{
+  display: flex;
+  justify-content: space-around;
+}  
+
+
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+.foot
+{
+  font-family: 'Devonshire', cursive;
+}
+
+
+
+.title:after { /*underline animation*/
+  content: '';
+  display: block;
+  margin-left: 40%;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.title:hover:after
+{
+  width: 20%;
+  background: #444;
+}
+.btn_contact,.btn-mentions
+{
+  margin-right: 30px;
+}
+
+.btn_mentions:hover, .btn_contact:hover /*wiggle animation*/
+{
+  
+  animation-name:wiggle;
+  animation-duration:1000ms;
+  animation-iteration-count:1;
+  animation-timing-function:1;
+
+}
+
+@keyframes wiggle 
+{
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+footer
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  background-color: #389c75;
+  color: #ffd633;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  bottom: 0;
+}
+
+
+  
+
