@@ -22,7 +22,7 @@ header /*ohmyfood logo*/
 
 #container
 {
-  width: 60%;
+  width: 80%;
   height:1000px;
   margin: auto;
   margin-top: 50px;
@@ -53,6 +53,8 @@ h2
 {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
 p
@@ -73,14 +75,7 @@ img
   padding-left:  10px;
   padding-right: 10px;
 }
-.left
-{
-  padding-left: 50px;
-}
-.right
-{
-  padding-right: 50px;
-}
+
 
 .esquisse:after { /*underline animation*/
   content: '';
@@ -135,7 +130,7 @@ img
   animation-name:wiggle;
   animation-duration:1000ms;
   animation-iteration-count:1;
-  animation-timing-function:1;
+  
 
 }
 

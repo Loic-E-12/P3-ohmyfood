@@ -33,7 +33,7 @@ h2
   text-align: center;
   padding-top: 20px;
   font-family: 'Devonshire', cursive;
- background-color: linear-gradient( #1858ed,#18ed38);
+ 
 }
 h3
 {
@@ -43,12 +43,20 @@ h3
 #container
 {
     
-  width: 60%;
+  width: 80%;
   margin: auto;
   margin-top: 80px;
   margin-bottom: 80px;
  
   background-color:#ffe6e6;
+}
+.entree,.dessert, .plat
+{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+
 }
 img
 {
@@ -72,16 +80,7 @@ p
   font-size: 1.3em;
 }
 
-.entree, .dessert, .plat
-{
-  display: flex;
-  justify-content: space-around;
-}  
-
-
-
-
-
+ 
 
 a
 {
@@ -148,13 +147,13 @@ h4
   margin-right: 30px;
 }
 
-.btn_mentions:hover, .btn_contact:hover /*wiggle animation*/
+.btn_mentions:hover, .btn_contact:hover/*wiggle animation*/
 {
   
   animation-name:wiggle;
-  animation-duration:1000ms;
+  animation-duration: 1000ms;
   animation-iteration-count:1;
-  animation-timing-function:1;
+  
 
 }
 
@@ -205,6 +204,36 @@ footer
   {
     display: none;
   }
+  .entree
+  {
+    width: 80%;
+    margin: 10px;
+  }
+  .btn_mentions, .btn_contact /*wiggle animation*/
+{
+  
+  animation-name:wiggle;
+  animation-duration:1000ms;
+  animation-iteration-count:infinite;
+  
+
+}
+
+@keyframes wiggle 
+{
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
   
 
 }

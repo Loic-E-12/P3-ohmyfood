@@ -152,7 +152,7 @@ img
   animation-name:wiggle;
   animation-duration:1000ms;
   animation-iteration-count:1;
-  animation-timing-function:1;
+  
 }
 
 @keyframes wiggle 

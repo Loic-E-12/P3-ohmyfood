@@ -42,20 +42,19 @@ body
 
 }
 .menu_a, .menu_b, .menu_c, .menu_d
+
 {
 	font-size: 15px;
 	border: 3px ridge transparent;
 	box-shadow: 6px 6px 9px grey;
-
 	width: 25%;
 	height: 200px;
 	text-align: center ;
 	padding: 1em;
 	margin-top: 30px;
 	padding-top: 50px;
-
-
 }
+
 .chic
 {
 	font-family: 'Croissant One', cursive;
@@ -64,8 +63,6 @@ body
   	-webkit-text-fill-color: transparent;
   	-webkit-background-clip: text;
   	font-size: 20px;
-
-
 }
 
 .delices
@@ -77,6 +74,7 @@ body
   	-webkit-text-fill-color: transparent;
   	-webkit-background-clip: text;
 }
+
 .goût
 {
 	font-family: 'Kaushan Script', cursive;
@@ -85,8 +83,8 @@ body
 	background: linear-gradient( #003311,#bbff33,#66ff99);
   	-webkit-text-fill-color: transparent;
   	-webkit-background-clip: text;
-  	
 }
+
 .note
 {
 	font-family:'Devonshire', cursive; 
@@ -117,6 +115,7 @@ body
 	font-size: 20px;
 	color: #00cc44;
 }
+
 .prochainement .dot /*animation typing dot*/
 {   
 	display: inline-block;
@@ -159,6 +158,7 @@ body
 	text-align: center;
 	opacity: 0.7;
 }
+
 .center
 {
 	padding-top: 10px;
@@ -222,7 +222,7 @@ footer
 	animation-name:wiggle;
 	animation-duration:1000ms;
 	animation-iteration-count:1;
-	animation-timing-function:1;
+	
 
 }
 
