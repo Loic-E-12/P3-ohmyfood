@@ -25,7 +25,8 @@ h1
   text-align: center;
   margin: auto;
   padding-top: 50px;
-  font-family: 'Devonshire', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
 }
 
 h2
@@ -33,6 +34,7 @@ h2
   text-align: center;
   padding-top: 20px;
   font-family: 'Devonshire', cursive;
+  padding-top: 60px;
  
 }
 h3
@@ -45,34 +47,34 @@ h3
     
   width: 80%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 80px;
  
-  background-color:#ffe6e6;
+  background-color:#ffcccc
 }
 .entree,.dessert, .plat
 {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
   margin: auto;
 
 }
 img
 {
   width: 20%;
-  margin: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-}
-.fa-music
-{
-  background: linear-gradient( #ff3333,#ffcc80);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 35px;
   
+ 
 }
+.note
+{
+  width: 5%;
+}
+.note_bis
+{
+  width: 3%;
+}
+
 
 p
 {
@@ -105,13 +107,13 @@ h4
   display: flex;
   height: 1px;
   width: 0;
-  margin-left: 45%;
+  margin-left: 46%;
   background: transparent;
   transition: width .7s ease, background-color .7s ease;
 }
 .prelude:hover:after
 {
-  width: 10%;
+  width: 8%;
   background: #444;
 }
 .point:after { /*underline animation*/
@@ -119,13 +121,13 @@ h4
   display: flex;
   height: 1px;
   width: 0;
-  margin-left: 41%;
+  margin-left: 43%;
   background: transparent;
   transition: width .7s ease, background-color .7s ease;
 }
 .point:hover:after
 {
-  width: 18%;
+  width: 14%;
   background: #444;
 }
 .final:after { /*underline animation*/
@@ -193,20 +195,25 @@ footer
   body
   {
     margin: 0;
-    background-color:#ffe6e6;
+   
   }
   .container
   {
     width: 100%;
-    margin: 0;
+    
   }
   img
   {
     display: none;
   }
-  .entree
+  h1
+  { 
+    margin-top: -20px; 
+    font-size: 1.2em;
+  }
+  .entree, .plat, .dessert
   {
-    width: 80%;
+    width: 90%;
     margin: 10px;
   }
   .btn_mentions, .btn_contact /*wiggle animation*/
@@ -215,9 +222,8 @@ footer
   animation-name:wiggle;
   animation-duration:1000ms;
   animation-iteration-count:infinite;
-  
-
 }
+
 
 @keyframes wiggle 
 {

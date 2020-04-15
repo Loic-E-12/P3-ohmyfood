@@ -23,16 +23,16 @@ header /*ohmyfood logo*/
 #container
 {
   width: 80%;
-  height:1000px;
   margin: auto;
   margin-top: 50px;
+  height: 1100px;
 }
 
 h1
 {
   text-align: center;
   margin: auto;
-  margin-bottom: 50px;
+  margin-top: 20px;
   font-size: 3em;
   font-family: 'Kaushan Script', cursive;
   background: linear-gradient( #003311,#bbff33,#66ff99);
@@ -53,14 +53,14 @@ h2
 {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 65%;
   margin: auto;
 }
 
 p
 {
   font-family: 'Caveat', cursive;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 a
@@ -175,10 +175,45 @@ footer
   }
   .entree, .plat, .dessert
   {
-    width: 75%;
+    width: 80%;
     
   }
+  img
+  {
+    display: none;
+  }
+   .btn_mentions, .btn_contact /*wiggle animation*/
+{
+  
+  animation-name:wiggle;
+  animation-duration:1000ms;
+  animation-iteration-count:infinite;
+}
 
+
+@keyframes wiggle 
+{
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+}
+@media screen and (max-width: 768px)
+{
+  img
+  {
+    width: 15%;
+  }
 }
 
  

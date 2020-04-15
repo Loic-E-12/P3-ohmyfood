@@ -37,7 +37,7 @@ h1
 
 #container
 {
-  width: 80%;
+  width: 85%;
   
   margin: auto;
   margin-top: 50px;
@@ -49,7 +49,7 @@ h1
 {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 p
@@ -82,7 +82,7 @@ a
 .title:after { /*underline animation*/
   content: '';
   display: block;
-  margin-left: 40%;
+  margin-left: 43%;
   height: 1px;
   width: 0;
   background: transparent;
@@ -90,7 +90,7 @@ a
 }
 .title:hover:after
 {
-  width: 20%;
+  width: 15%;
   background: #444;
 }
 .btn_contact,.btn-mentions
@@ -142,16 +142,43 @@ footer
 {
   #container
   {
-    width: 100%;
+    width: 90%;
     
 
   }
   .entree, .plat, .dessert
   {
-    width: 75%;
+    width: 90%;
     
   }
- 
+  img
+  {
+    display: none;
+  }
+   .btn_mentions, .btn_contact /*wiggle animation*/
+{
+  
+  animation-name:wiggle;
+  animation-duration:1000ms;
+  animation-iteration-count:infinite;
+}
+
+
+@keyframes wiggle 
+{
+  0% {transform: rotate(1deg);}
+  5% {transform: rotate(-1deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(1deg);}
+  25% {transform: rotate(-1deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(10deg);}
+  60%{transform: rotate(-10deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
 }
 
 
