@@ -213,30 +213,10 @@ footer
   {
     padding-top: 20px;
   }
-   .btn_mentions, .btn_contact /*wiggle animation*/
-{
-  
-  animation-name:wiggle;
-  animation-duration:1000ms;
-  animation-iteration-count:infinite;
-}
-
-
-@keyframes wiggle 
-{
-  0% {transform: rotate(1deg);}
-  5% {transform: rotate(-1deg);}
-  10%{transform: rotate(5deg);}
-  15%{transform: rotate(-5deg);}
-  20%{transform: rotate(1deg);}
-  25% {transform: rotate(-1deg);}
-  40%{transform: rotate(5deg);}
-  45%{transform: rotate(-5deg);}
-  50% {transform: rotate(10deg);}
-  60%{transform: rotate(-10deg);}
-  75% {transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
-}
+  footer
+  {
+    display: block;
+  }
 
 }
 
