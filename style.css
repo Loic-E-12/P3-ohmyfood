@@ -1,31 +1,10 @@
-header
-{
-	display: flex;
-	justify-content: center;
-	font-size: 2em;
-	padding: 10px;
-	height: 60px;
-	margin: auto;
-	padding-top: 15px;
-	font-family: 'Roboto', sans-serif;
-	background-color: #389c75;
-	color: #ffd633;
-	align-self: center;
-}
-body
-{
-	margin: 0;
-	padding: 0;
-	position: relative;
-	
-}
-
 img
 {
 	width: 20%;
 	margin-bottom: -30px;
 	padding-top: 1px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
+	background-color: rgb(252,223,219);
 }
 #container
 {
@@ -43,8 +22,8 @@ img
 
 {
 	font-size: 15px;
-	border: 3px ridge transparent;
-	box-shadow: 6px 6px 9px grey;
+	border: 2px ridge transparent;
+	box-shadow :  2px 2px 2px 3px rgb(241,241,241);
 	width: 25%;
 	height: 200px;
 	text-align: center ;
@@ -57,30 +36,30 @@ img
 {
 	font-family: 'Croissant One', cursive;
 	padding-top: 60px;
-	background: linear-gradient( #ff0000,#ff9900,#8080ff);
-  	-webkit-text-fill-color: transparent;
-  	-webkit-background-clip: text;
+	 background: -webkit-linear-gradient(left,rgb(198,116,18),rgb(165,103,153),rgb(110,76,204));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   	font-size: 20px;
 }
 
 .delices
 {
 	font-family: 'Dancing Script', cursive;
-	font-size: 20px;
+	font-size: 2em;
 	padding-top: 40px;
-	background: linear-gradient(#0000b3,#0000ff,#80dfff );
-  	-webkit-text-fill-color: transparent;
-  	-webkit-background-clip: text;
+	 background: -webkit-linear-gradient(left,rgb(2,40,221),rgb(6,112,243),rgb(34,157,249));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .goût
 {
 	font-family: 'Kaushan Script', cursive;
 	padding-top: 40px;
-	font-size: 20px;
-	background: linear-gradient( #003311,#bbff33,#66ff99);
-  	-webkit-text-fill-color: transparent;
-  	-webkit-background-clip: text;
+	font-size: 2em;
+	 background: -webkit-linear-gradient(left,rgb(102,180,80),rgb(188,253,126));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .note
@@ -104,14 +83,14 @@ img
 .sub_c
 {
 	font-family: 'Caveat', cursive;
-	font-size: 20px;
+	font-size: 30px;
 	color:  #4da6ff;
 }
 .sub_d
 {
 	font-family: 'Caveat', cursive;
-	font-size: 20px;
-	color: #00cc44;
+	font-size: 30px;
+	color: rgb(114,191,86);
 }
 
 .prochainement .dot /*animation typing dot*/
@@ -154,96 +133,27 @@ img
 .opacity
 {
 	text-align: center;
-	
 }
-
-
-
 
 .menu_a
 {
-	background-color:#ffcccc;
+	background-color:rgb(252,223,219);
 }
 
-	
 .prochainement
 {
-	width: 15%;
-	padding: 5px;
+	width: 20%;
+	padding: 1px;
 	margin:auto;
 	margin-top: 30px;
 	margin-bottom: 80px;
+	border-radius: 10px;
 	text-align: center;
-	background-color: #389c75;
-	color: #ffd633;
+	background-color:rgb(87,156,135);
+	color: rgb(253,203,70);
 	font-family: 'Roboto', sans-serif;
-		
 }
 
-
-
-
-
-.btn_contact,.btn_mentions
-{
-	margin-right: 15px;
-	margin-top: 15px;
-	margin-left: 5px;
-	padding: 1px;
-}
-a
-{
-	text-decoration: none;
-	color: inherit;
-}
-.btn_mentions:hover, .btn_contact:hover /*animation wiggle footer*/
-{
-	
-	animation-name:wiggle;
-	animation-duration:1000ms;
-	animation-iteration-count:1;
-	
-
-}
-
-	@keyframes wiggle {
-  0% {transform: rotate(5deg);}
-  5% {transform: rotate(-5deg);}
-  10%{transform: rotate(5deg);}
-  15%{transform: rotate(-5deg);}
-  20%{transform: rotate(5deg);}
-  25% {transform: rotate(-5deg);}
-  40%{transform: rotate(5deg);}
-  45%{transform: rotate(-5deg);}
-  50% {transform: rotate(5deg);}
-  60%{transform: rotate(-5deg);}
-  70%{transform: rotate(5deg);}
-  75% {transform: rotate(-5deg);}
-  80% {transform: rotate(5deg);}
-  90%{transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
-}
-
-
-
-
-
-footer
-{
-	display: flex;
-	justify-content: space-between;
-	font-size: 1em;
-	width: 100%;
-	margin-top: 5px;
-	margin: auto;
-	padding: 5px;
-	background-color: #389c75;
-	color: #ffd633;
-	font-family: 'Roboto', sans-serif;
-	position: fixed;
-	bottom: 0;
-	
-}
 @media screen and (max-width: 425px)/*responsive design mobile*/
 {
 	#container
@@ -251,7 +161,6 @@ footer
 		display: block;
 		width: 100%;
 		height: auto;
-		
 		margin: auto;
 	}
 	.menu_a, .menu_b, .menu_c, .menu_d
@@ -260,13 +169,14 @@ footer
 		width: 95%;
 		
 	}
-	p, .btn_mentions, .btn_contact
+	p .btn_mentions, .btn_contact
 	{
 		font-size: 1em;
 	}
 	.note, .goût, .delices, .chic
 	{
 		font-size: 1.2em;
+		
 	}
 	header
 	{
@@ -277,12 +187,8 @@ footer
 	{
 	
 		width: 60%;
-		margin-bottom: 140px;
 	}
-	footer
-	{
-		display: block;
-	}
+	
 }
 
 @media screen and (max-width: 768px)/*responsive design tablet*/
@@ -304,12 +210,22 @@ footer
 	.note, .chic, .delices, .goût
 	{ 
 		font-size: 2em; 
+
 	}
+
+
+
+
 	
-	body
-	{
-		margin: 0;
-		width: auto;
-	}
-}
+
+
+
+
+
+
+
+
+
+	
+	
 

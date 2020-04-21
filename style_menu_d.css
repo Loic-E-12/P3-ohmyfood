@@ -1,53 +1,23 @@
-body
-{
-  margin: 0;
-  padding: 0;
-  position: relative;
-  
-}
-
-header /*ohmyfood logo*/
-{
-	display: flex;
-  justify-content: center;
-  font-size: 2em;
-  padding: 10px;
-  height: 60px;
-  margin: auto;
-  padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
-  background-color: #389c75;
-  color: #ffd633;
-  align-self: center;
- }
-
 #container
 {
   width: 80%;
   margin: auto;
   height: 1200px;
-
 }
-
-h1
-{
-  text-align: center;
-  margin: auto;
-  margin-top: 20px;
-  font-size: 3em;
-  font-family: 'Kaushan Script', cursive;
-  background: linear-gradient( #003311,#bbff33,#66ff99);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  
-}
-  
 
 h2
 {
   text-align: center;
   margin-top: 35px;
   font-family:  'Caveat', cursive;
+  background: -webkit-linear-gradient(left,rgb(102,180,80),rgb(188,253,126));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+}
+h3
+{
+  text-align: center;
 }
 
 .entree, .plat, .dessert
@@ -57,17 +27,11 @@ h2
   width: 65%;
   margin: auto;
 }
-
+  
 p
 {
   font-family: 'Caveat', cursive;
   font-size: 1.3em;
-}
-
-a
-{
-  text-decoration: none;
-  color: inherit;
 }
 
 img
@@ -76,7 +40,6 @@ img
   padding-left:  10px;
   padding-right: 10px;
 }
-
 
 .esquisse:after { /*underline animation*/
   content: '';
@@ -120,74 +83,26 @@ img
   width: 20%;
   background: #444;
 }
-.btn_contact,.btn-mentions
-{
-  margin-right: 30px;
-}
 
-.btn_mentions:hover, .btn_contact:hover /*wiggle animation*/
-{
-  
-  animation-name:wiggle;
-  animation-duration:1000ms;
-  animation-iteration-count:1;
-  
-
-}
-
-@keyframes wiggle
-{
-  0% {transform: rotate(1deg);}
-  5% {transform: rotate(-1deg);}
-  10%{transform: rotate(5deg);}
-  15%{transform: rotate(-5deg);}
-  20%{transform: rotate(1deg);}
-  25% {transform: rotate(-1deg);}
-  40%{transform: rotate(5deg);}
-  45%{transform: rotate(-5deg);}
-  50% {transform: rotate(10deg);}
-  60%{transform: rotate(-10deg);}
-  75% {transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
-}
-
-footer
-{
-  display: flex;
-  justify-content: space-between;
-  font-size: 1em;
-  width: 100%;
-  margin-top: 5px;
-  margin: auto;
-  padding: 5px;
-  background-color: #389c75;
-  color: #ffd633;
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  bottom: 0;
-}
 @media screen and (max-width: 425px)/*responsive design mobile*/
 {
   #container
   {
     height: 1400px;
-    
-
   }
   .entree, .plat, .dessert
   {
     width: 80%;
-    
+  }
+  h2
+  {
+    font-size: 2.5em;
   }
   img
   {
     display: none;
   }
-footer
-  {
-    display: block;
-  }
-}
+
 @media screen and (max-width: 768px)
 {
   img
@@ -195,6 +110,14 @@ footer
     width: 15%;
   }
 }
+
+
+
+
+
+
+
+
 
  
 

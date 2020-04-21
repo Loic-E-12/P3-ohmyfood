@@ -1,58 +1,33 @@
-body
-{
- 
-  margin: 0;
-  padding: 0;
-  position: relative;
-  
-}
-
-header /*ohmyfood logo*/
-{
-	display: flex;
-  justify-content: center;
-  font-size: 2em;
-  padding: 10px;
-  height: 60px;
-  margin: auto;
-  padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
-  background-color: #389c75;
-  color: #ffd633;
-  align-self: center;
-  
- }
-
 #container /*Main menu*/
 {
-  	
+    
   width: 90%;
-  
+  background-color: rgb(255,245,254);
   margin: auto;
   margin-top: 30px;
   height: 1100px;
-
-    
 }
+
 img
 {
   width: 15%;
-}
- 
-h1
-{
-  text-align: center;
-  margin: auto;
-  padding-top: 50px;
-  font-family: 'Croissant One', cursive;
-  background: linear-gradient( #ff0000,#ff9900,#8080ff);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 h2
-{
+{   background: -webkit-linear-gradient(left,rgb(198,116,18),rgb(165,103,153),rgb(110,76,204));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
+  margin-top: 100px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+} 
+
+h3
+{
+   text-align: center;
   margin-top: 100px;
   font-family: 'Roboto Slab', serif;
   font-size: 1.2em;
@@ -60,15 +35,9 @@ h2
 
 p
 {
-	font-family: 'Roboto Slab', serif;
-	font-size: 0.8em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8em;
 }
-a
-{
-  text-decoration: none;
-  color: inherit;
-}  
-
 
 .entree, .plat, .dessert
 {
@@ -81,27 +50,23 @@ a
 
 .entree,.orange
 {
-	color: #cc5200;
+  color: rgb(198,116,18);
 }
 .plat,.violet
 {
-	color: #ac00e6;
+  color: rgb(165,103,153);
 }
 .dessert,.mauve
 {
-	color: #6600ff;
+  color: rgb(110,76,204);
 }
 
-img
-{
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
 
 .orange:after { /*underline animation*/
   content: '';
   display: block;
-  margin-left: 35%;
+  margin-left: 40%;
   height: 1px;
   width: 0;
   background: transparent;
@@ -110,13 +75,13 @@ img
 
 .orange:hover:after 
 {
-  width: 30%;
-  background:#cc5200;
+  width: 20%;
+  background:rgb(198,116,18);
 }
 .violet:after { /*underline animation*/
   content: '';
   display: block;
-  margin-left: 39%;
+  margin-left: 42%;
   height: 1px;
   width: 0;
   background: transparent;
@@ -125,13 +90,13 @@ img
 
 .violet:hover:after 
 {
-  width: 23%;
-  background:#ac00e6;
+  width: 16%;
+  background:rgb(165,103,153);
 }
 .mauve:after { /*underline animation*/
   content: '';
   display: block;
-  margin-left: 36%;
+  margin-left: 41%;
   height: 1px;
   width: 0;
   background: transparent;
@@ -140,54 +105,10 @@ img
 
 .mauve:hover:after 
 {
-  width: 28%;
-  background:#6600ff;
-}
-.btn_contact,.btn-mentions
-{
-	margin-right: 30px;
+  width: 18%;
+  background:rgb(110,76,204);
 }
 
-.btn_mentions:hover, .btn_contact:hover/*wiggle animation*/
-{
-  animation-name:wiggle;
-  animation-duration:1000ms;
-  animation-iteration-count:1;
-  
-}
-
-@keyframes wiggle 
-{
- 	0% {transform: rotate(1deg);}
-  5% {transform: rotate(-1deg);}
-  10%{transform: rotate(5deg);}
-  15%{transform: rotate(-5deg);}
-  20%{transform: rotate(1deg);}
-  25% {transform: rotate(-1deg);}
-  40%{transform: rotate(5deg);}
-  45%{transform: rotate(-5deg);}
-  50% {transform: rotate(10deg);}
-  60%{transform: rotate(-10deg);}
-  75% {transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
-}
-
-footer
-{
-	display: flex;
-  justify-content: space-between;
-  font-size: 1em;
-  width: 100%;
-  margin-top: 5px;
-  margin: auto;
-  padding: 5px;
-  background-color: #389c75;
-  color: #ffd633;
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  bottom: 0;
-  
-}
 @media screen and (max-width: 425px)/*responsive design mobile*/
 {
   #container
@@ -209,15 +130,11 @@ footer
   {
     margin-top: 40px;
   }
-  h1
-  {
-    padding-top: 20px;
-  }
-  footer
-  {
-    display: block;
-  }
-
+ 
 }
+
+
+
+
 
 

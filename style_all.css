@@ -1,0 +1,76 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	display: flex;
+	justify-content: center;
+	font-size: 1.2em;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(87,156,135);
+	color: rgb(253,203,70);
+	
+}
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn_contact,.btn-mentions
+{
+  margin-right: 30px;
+}
+
+.btn_mentions:hover, .btn_contact:hover /*animation wiggle footer*/
+{
+	
+	animation-name:wiggle;
+	animation-duration:1000ms;
+	animation-iteration-count:1;
+	
+
+}
+
+	@keyframes wiggle {
+  0% {transform: rotate(5deg);}
+  5% {transform: rotate(-5deg);}
+  10%{transform: rotate(5deg);}
+  15%{transform: rotate(-5deg);}
+  20%{transform: rotate(5deg);}
+  25% {transform: rotate(-5deg);}
+  40%{transform: rotate(5deg);}
+  45%{transform: rotate(-5deg);}
+  50% {transform: rotate(5deg);}
+  60%{transform: rotate(-5deg);}
+  70%{transform: rotate(5deg);}
+  75% {transform: rotate(-5deg);}
+  80% {transform: rotate(5deg);}
+  90%{transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+
+
+
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1em;
+	width: 100%;
+	margin-top: 5px;
+	
+	padding: 5px;
+	background-color: rgb(87,156,135);
+	color:rgb(253,203,70);
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	bottom: 0;
+	
+}
